@@ -1,0 +1,38 @@
+{
+  "name": "pizzaburg-khulna",
+  "version": "0.1.0",
+  "description": "Premium digital dining experience platform for PizzaBurg Khulna, Bangladesh",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "next": "^14.2.3",
+    "typescript": "^5.4.5",
+    "tailwindcss": "^3.4.4",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "clsx": "^2.1.1",
+    "framer-motion": "^10.16.19",
+    "zustand": "^4.5.2",
+    "react-hot-toast": "^2.4.1",
+    "date-fns": "^3.6.0",
+    "zod": "^3.23.8",
+    "react-hook-form": "^7.51.5",
+    "axios": "^1.7.7",
+    "sharp": "^0.33.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.3"
+  }
+}
