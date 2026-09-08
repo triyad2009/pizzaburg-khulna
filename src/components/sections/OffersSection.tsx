@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
@@ -35,7 +35,6 @@ const OffersSection = () => {
   return (
     <section className="py-20 bg-pb-cream">
       <div className="max-w-7xl mx-auto px-4 lg:px-6">
-        {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -52,7 +51,6 @@ const OffersSection = () => {
           </p>
         </motion.div>
 
-        {/* Offers Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           {offers.map((offer, idx) => (
             <motion.div
@@ -89,7 +87,6 @@ const OffersSection = () => {
           ))}
         </div>
 
-        {/* View All CTA */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

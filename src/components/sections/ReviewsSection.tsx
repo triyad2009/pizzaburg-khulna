@@ -31,7 +31,6 @@ const ReviewsSection = () => {
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 lg:px-6">
-        {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -46,7 +45,6 @@ const ReviewsSection = () => {
           </p>
         </motion.div>
 
-        {/* Reviews Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {reviews.map((review, idx) => (
             <motion.div
@@ -57,17 +55,14 @@ const ReviewsSection = () => {
               transition={{ delay: idx * 0.1 }}
               className="bg-pb-cream rounded-xl p-6 border-l-4 border-pb-red hover:shadow-lg transition-shadow"
             >
-              {/* Stars */}
               <div className="flex gap-1 mb-3">
                 {[...Array(review.rating)].map((_, i) => (
                   <span key={i} className="text-pb-yellow text-lg">⭐</span>
                 ))}
               </div>
 
-              {/* Review Text */}
               <p className="text-gray-700 mb-4 italic">"{review.comment}"</p>
 
-              {/* Author Info */}
               <div className="pt-4 border-t border-gray-300">
                 <p className="font-semibold text-pb-navy">{review.name}</p>
                 <p className="text-xs text-gray-500">{review.date}</p>

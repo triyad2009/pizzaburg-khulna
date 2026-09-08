@@ -9,7 +9,6 @@ const LocationSection = () => {
     <section className="py-20 bg-pb-navy text-white">
       <div className="max-w-7xl mx-auto px-4 lg:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Map */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -25,7 +24,6 @@ const LocationSection = () => {
             </div>
           </motion.div>
 
-          {/* Location Info */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
